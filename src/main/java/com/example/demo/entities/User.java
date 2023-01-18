@@ -8,9 +8,11 @@ public class User {
 	private String gender;
 	private String phoneNumber;
 	private String address;
+	private String password;
+	private String role;
 	
 	public User(long id, String firstname, String lastname, String email, String gender, String phoneNumber,
-			String address) {
+			String address, String password, String role) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -19,6 +21,10 @@ public class User {
 		this.gender = gender;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
+		this.password = password;
+		this.role=role;
+
+
 	}
 
 	public User() {
@@ -82,10 +88,27 @@ public class User {
 		this.address = address;
 	}
 
+	public String getpassword() {
+		return password;
+	}
+
+	public void setPassword(String address) {
+		this.password = password;
+	}
+
+	
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
-				+ ", gender=" + gender + ", phoneNumber=" + phoneNumber + ", address=" + address + "]";
+				+ ", gender=" + gender + ", phoneNumber=" + phoneNumber + ", address=" + address + ",password="+password+",role="+role+"]";
 	}
 	
 	

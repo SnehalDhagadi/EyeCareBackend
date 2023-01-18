@@ -13,8 +13,8 @@ public class UserServiceImpl implements UserService {
 	List<User> list;
     public UserServiceImpl () {
     	list = new ArrayList<>();
-    	list.add(new User(1,"Snehal", "dhagadi", "dhagdisnehal@gmail.com", "female", "1234567890", "Pune"));
-    	list.add(new User(2,"Rutuja", "jadhav", "rutuja@gmail.com", "female", "1234867890", "Pune"));
+    	list.add(new User(1,"Snehal", "dhagadi", "dhagdisnehal@gmail.com", "female", "1234567890", "Pune","snehal@123","user"));
+    	
     	
 	}
 
